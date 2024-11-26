@@ -52,9 +52,6 @@ class CipherDataset(Dataset):
         return torch.tensor(self.encodings[idx]), torch.tensor(self.symbol_indices[idx])
 
 
-# Wrap data in the simplest possible way to enable PyTorch data fetching
-# https://pytorch.org/docs/stable/data.html
-
 BATCH_SIZE = 64
 TRAIN_FRAC = 0.97
 
